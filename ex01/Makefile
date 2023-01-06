@@ -6,7 +6,7 @@
 #    By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/29 20:09:48 by adiouane          #+#    #+#              #
-#    Updated: 2023/01/02 23:55:40 by adiouane         ###   ########.fr        #
+#    Updated: 2023/01/06 03:39:59 by adiouane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,17 +14,17 @@ NAME := a.out
 
 SRC := main.cpp Bureaucrat.cpp Form.cpp \
 
-GCC := c++ -Werror -Wextra -Wall  -std=c++98  #-fsanitize=thread
+OBJ = $(SRC:.cpp=.o)
 
-all : $(NAME)
+CC = c++ -Wall -Wextra -Werror -std=c++98
 
-$(NAME) : $(SRC)
-		@$(GCC) $(SRC) -o $(NAME)
+all: $(NAME)
 
-clean :
-	@echo "Cleaning up..."
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	rm -rf $(OBJ)
 
-fclean :
-	@rm -f $(NAME)
-
-re : fclean all
+fclean: 
+	rm -rf $(OBJ) $(NAME)
+re: fclean all
