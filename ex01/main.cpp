@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 22:40:11 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 18:04:11 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 18:50:27 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int main()
         Form tmp("\033[0;32mForm-adiouane\033[0;20m", 3, 2);
         tmp.beSigned(b1);
         b1.signForm(tmp);
-        // std::cout << tmp << std::endl;
-        // std::cout << b1 << std::endl;
+        // std::cout << tmp << std::endl; // information
+        // std::cout << b1 << std::endl; // information
     }
     catch (std::exception & e)
     {

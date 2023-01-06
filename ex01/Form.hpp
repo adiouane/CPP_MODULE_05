@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 21:52:23 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 01:13:55 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 18:44:51 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,11 @@ class Form
         /*NESTED CLASS*/
         class GradeTooHighException : public std::exception{
             public:
-                virtual const char*what()const throw();
+                const char*what()const throw();
         };
         class GradeTooLowException : public std::exception{
             public:
-                virtual const char*what()const throw();
+                const char*what()const throw();
         };
 
 };

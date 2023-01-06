@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 21:52:23 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 03:33:36 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 18:44:16 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 #include "Bureaucrat.hpp"
 #include <fstream>
 class Bureaucrat;
-
 
 class Form
 {
@@ -32,9 +31,9 @@ class Form
         Form& operator=(Form const &obj);
         ~Form();
         Form(std::string const &name, int to_signed, int to_execute);
+
+
         /*GETTERS*/
-
-
         std::string getName() const;
         bool getIsSigned() const;
         int getToSigned() const;
@@ -45,15 +44,15 @@ class Form
         /*NESTED CLASS*/
         class GradeTooHighException : public std::exception{
             public:
-                virtual const char*what()const throw();
+                const char*what()const throw();
         };
         class GradeTooLowException : public std::exception{
             public:
-                virtual const char*what()const throw();
+                const char*what()const throw();
         };
         class FormNotSignedException : public std::exception{
             public:
-                virtual const char*what()const throw();
+                const char*what()const throw();
         };
         
         virtual void execute(Bureaucrat const &executor) const = 0;

@@ -6,13 +6,13 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 21:52:11 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 16:40:59 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 18:38:55 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Form.hpp"
 
-Form::Form() : _name("default"), _to_signed(150), _to_execute(150){}
+Form::Form() : _name("\033[0;32mdefault\033[0;20m"), _to_signed(150), _to_execute(150){}
 
 Form::Form(Form const &obj) : _name(obj.getName()), _to_signed(obj.getToSigned()), _to_execute(obj.getToExecute()){}
 

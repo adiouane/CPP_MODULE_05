@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 22:39:12 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 01:03:46 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 18:23:30 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ class Bureaucrat {
         /*GETTERS*/
         std::string getName() const;
         int         getGrade() const;
+
+        /*MEMBERFUNCTION*/
         void        increment_grade();
         void        decrement_grade();
 
@@ -40,11 +42,11 @@ class Bureaucrat {
         /*NESTED CLASS*/
         class GradeTooHighException : public std::exception{
             public:
-                virtual const char*what()const throw();
+                const char*what()const throw();
         };
         class GradeTooLowException : public std::exception{
             public:
-                virtual const char*what()const throw();
+                const char*what()const throw();
         };
 
         void executeForm(Form const &form) const;
