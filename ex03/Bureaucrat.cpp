@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 22:38:40 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 03:37:07 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 03:50:27 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@ Bureaucrat& Bureaucrat::operator=(Bureaucrat const &obj){
 }
 
 Bureaucrat::~Bureaucrat(){};
+
+/*ORTHODOX*/
+
 
 Bureaucrat::Bureaucrat(std::string const &Name, int grade) : _grad_name(Name), _grad_rang(grade){
     if (grade > 150)
