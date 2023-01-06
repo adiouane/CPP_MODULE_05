@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 21:52:11 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 03:25:39 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 03:56:05 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ const char*Form::GradeTooLowException::what()const throw()
 
 std::ostream &operator<<(std::ostream &out, const Form &obj)
 {
-    out << obj.getName() << ", form grade to sign " << obj.getToSigned() << ", form grade to execute " << obj.getToExecute();
+    out << "form " << obj.getName() << ", grade to sign " << obj.getToSigned() << ", form grade to execute " << obj.getToExecute();
     if (obj.getIsSigned())
         out << ", form is signed";
     else

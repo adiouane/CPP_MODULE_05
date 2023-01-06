@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 01:34:02 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 03:22:02 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 17:01:21 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,9 @@ Form *Intern::makeForm(std::string const &name, std::string const &target)
             return forms[i];
         }
     }
+    if (name != formNames[0] && name != formNames[1] && name != formNames[2])
+        for (int i = 0; i < 3; i++)
+            delete forms[i];
     std::cout << "Intern can't create " << name << std::endl;
     return NULL;
 }

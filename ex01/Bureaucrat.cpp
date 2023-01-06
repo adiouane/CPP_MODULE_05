@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 22:38:40 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 03:36:47 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 16:44:28 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,6 @@ void  Bureaucrat::signForm(Form &form){
         std::cout << _grad_name << " signed " << form.getName() << std::endl;
     }
     catch(const std::exception& e){
-        std::cerr << _grad_name << " cannot sign " << form.getName() << " because " << e.what() << std::endl;
+        std::cerr << _grad_name << " couldn’t sign " << form.getName() << " because " << e.what() << std::endl;
     }
 }
