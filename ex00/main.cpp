@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 22:40:11 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 03:11:14 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 03:41:45 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main()
 {
     try
     {
-        Bureaucrat b("John", 3);
+        Bureaucrat b("someberuacrat", 3);
         std::cout << b << std::endl;
         b.increment_grade();
         std::cout << b << std::endl;

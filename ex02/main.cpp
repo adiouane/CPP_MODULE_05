@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 22:40:11 by adiouane          #+#    #+#             */
-/*   Updated: 2023/01/06 03:38:07 by adiouane         ###   ########.fr       */
+/*   Updated: 2023/01/06 03:42:24 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 int main()
 {
     try{
-        Bureaucrat b1("Bureaucrat1", 2);
-        Bureaucrat b2("Bureaucrat2", 149);
-        Bureaucrat b3("Bureaucrat3", 149);
+        Bureaucrat b1("someberuacrat1", 2);
+        Bureaucrat b2("someberuacrat2", 149);
+        Bureaucrat b3("someberuacrat3", 149);
 
         ShrubberyCreationForm f1("ShrubberyCreationForm");
         RobotomyRequestForm f2("RobotomyRequestForm");
